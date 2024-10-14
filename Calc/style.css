@@ -1,0 +1,90 @@
+body{
+    width: 100%;
+    background-color: black;
+    /* display: flex;
+    justify-content: center; */
+}
+.calc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    width: 600px;
+    background: black;
+    padding: 20px;
+    border: 5px solid rgb(87, 87, 87 , 0.5);
+    margin-top: 50px;
+}
+.just{
+    justify-content: space-between;
+}
+.key-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.keys{
+    font-size: 40px;
+    background-color: rgb(87, 87, 87);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+.display{
+    width: 100%;
+    border: 1px solid white;
+    font-size: 40px;
+    height: 82px;
+    border-radius: 20px;
+    text-align: right;
+    padding: 10px;
+    color: white;
+}
+h1{
+    font-size: 60px;
+    color: white;
+}
+.orange{
+    background-color: orangered;
+}
+.grey{
+    background-color: gray;
+}
+
+@media only screen and (max-width:768px) {
+    .calc{
+        margin-top: 0;
+        border: none;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:496px) {
+    .display{
+        font-size: 30px;
+        padding: 5px;
+        height: 55px;
+    }
+    .keys{
+        font-size: 25px;
+        width: 70px;
+        height: 70px;
+    }
+}
+@media only screen and (max-width:340px) {
+    .keys{
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+}
